@@ -1,0 +1,20 @@
+# Slim SERVING dependencies for deployment (Railway).
+# Serves from the prebuilt local numpy index + fastembed (compiler-free) + Groq.
+# The heavy ingestion/production stack (chromadb, sentence-transformers, torch,
+# playwright, langchain) is NOT needed at serve time — see Docs/deployment.md.
+
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+pydantic==2.10.4
+pydantic-settings==2.7.1
+python-dotenv==1.0.1
+
+# LLM (Groq free tier)
+groq==0.13.1
+
+# Compiler-free retrieval backend (numpy store + fastembed ONNX embeddings)
+numpy>=1.26,<3
+fastembed>=0.3,<0.5
+
+# Optional: only needed if SCHEDULER_ENABLED=1 (in-app re-ingestion)
+# APScheduler==3.11.0

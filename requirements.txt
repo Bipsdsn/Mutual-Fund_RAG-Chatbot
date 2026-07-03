@@ -1,0 +1,39 @@
+# RAG-Based Mutual Fund FAQ Chatbot — pinned dependencies ($0 stack)
+# Python 3.10+ recommended. See Docs/conventions.md §5.
+
+# --- API / backend ---
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+pydantic==2.10.4
+pydantic-settings==2.7.1
+
+# --- RAG framework ---
+langchain==0.3.14
+langchain-community==0.3.14
+langchain-text-splitters==0.3.5
+
+# --- Embeddings (local, free, CPU) ---
+sentence-transformers==3.3.1
+
+# --- Vector store (local, free) ---
+chromadb==0.5.23
+
+# --- LLM (Groq free tier) ---
+groq==0.13.1
+
+# --- Ingestion: scraping + parsing ---
+requests==2.32.3
+beautifulsoup4==4.12.3
+playwright==1.49.1
+pypdf==5.1.0
+pdfplumber==0.11.4
+
+# --- Config / env ---
+python-dotenv==1.0.1
+
+# --- Scheduler (optional in-app periodic re-ingestion; disabled by default) ---
+APScheduler==3.11.0
+
+# --- Testing ---
+pytest==8.3.4
+httpx==0.28.1

@@ -1,0 +1,143 @@
+{
+  "generated": "2026-07-03",
+  "note": "Scraped exact facts per scheme; regulatory facts are seeded in code.",
+  "facts": {
+    "HDFC Mid Cap Fund Direct Growth": {
+      "expense_ratio": {
+        "value": "0.75%",
+        "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+        "scrape_date": "2026-07-03"
+      },
+      "sip_details": {
+        "value": "₹100",
+        "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+        "scrape_date": "2026-07-03"
+      },
+      "lumpsum": {
+        "value": "₹5,000",
+        "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+        "scrape_date": "2026-07-03"
+      },
+      "aum": {
+        "value": "97,350.48 crore",
+        "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+        "scrape_date": "2026-07-03"
+      }
+    },
+    "HDFC Large Cap Fund Direct Growth": {
+      "expense_ratio": {
+        "value": "1.04%",
+        "source_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
+        "scrape_date": "2026-07-03"
+      },
+      "sip_details": {
+        "value": "₹100",
+        "source_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
+        "scrape_date": "2026-07-03"
+      },
+      "lumpsum": {
+        "value": "₹5,000",
+        "source_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
+        "scrape_date": "2026-07-03"
+      },
+      "aum": {
+        "value": "37,808.31 crore",
+        "source_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
+        "scrape_date": "2026-07-03"
+      }
+    },
+    "HDFC Small Cap Fund Direct Growth": {
+      "expense_ratio": {
+        "value": "0.77%",
+        "source_url": "https://groww.in/mutual-funds/hdfc-small-cap-fund-direct-growth",
+        "scrape_date": "2026-07-03"
+      },
+      "sip_details": {
+        "value": "₹100",
+        "source_url": "https://groww.in/mutual-funds/hdfc-small-cap-fund-direct-growth",
+        "scrape_date": "2026-07-03"
+      },
+      "lumpsum": {
+        "value": "₹5,000",
+        "source_url": "https://groww.in/mutual-funds/hdfc-small-cap-fund-direct-growth",
+        "scrape_date": "2026-07-03"
+      },
+      "aum": {
+        "value": "38,809.48 crore",
+        "source_url": "https://groww.in/mutual-funds/hdfc-small-cap-fund-direct-growth",
+        "scrape_date": "2026-07-03"
+      }
+    },
+    "HDFC Flexi Cap Fund Direct Growth": {
+      "expense_ratio": {
+        "value": "0.78%",
+        "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
+        "scrape_date": "2026-07-03"
+      },
+      "sip_details": {
+        "value": "₹100",
+        "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
+        "scrape_date": "2026-07-03"
+      },
+      "lumpsum": {
+        "value": "₹5,000",
+        "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
+        "scrape_date": "2026-07-03"
+      },
+      "aum": {
+        "value": "1,01,821.82 crore",
+        "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
+        "scrape_date": "2026-07-03"
+      }
+    },
+    "HDFC ELSS Tax Saver Fund Direct Plan Growth": {
+      "expense_ratio": {
+        "value": "0.05%",
+        "source_url": "https://www.hdfcfund.com/explore/mutual-funds/hdfc-elss-tax-saver/direct",
+        "scrape_date": "2026-07-03"
+      },
+      "sip_details": {
+        "value": "₹500",
+        "source_url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
+        "scrape_date": "2026-07-03"
+      },
+      "lumpsum": {
+        "value": "₹5,000",
+        "source_url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
+        "scrape_date": "2026-07-03"
+      },
+      "aum": {
+        "value": "15,366.50 crore",
+        "source_url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
+        "scrape_date": "2026-07-03"
+      },
+      "nav": {
+        "value": "₹12.2",
+        "source_url": "https://www.hdfcfund.com/explore/mutual-funds/hdfc-elss-tax-saver/direct",
+        "scrape_date": "2026-07-03"
+      }
+    },
+    "HDFC Gold ETF Fund of Fund Direct Plan Growth": {
+      "expense_ratio": {
+        "value": "0.20%",
+        "source_url": "https://groww.in/mutual-funds/hdfc-gold-etf-fund-of-fund-direct-plan-growth",
+        "scrape_date": "2026-07-03"
+      },
+      "sip_details": {
+        "value": "₹100",
+        "source_url": "https://groww.in/mutual-funds/hdfc-gold-etf-fund-of-fund-direct-plan-growth",
+        "scrape_date": "2026-07-03"
+      },
+      "lumpsum": {
+        "value": "₹5,000",
+        "source_url": "https://groww.in/mutual-funds/hdfc-gold-etf-fund-of-fund-direct-plan-growth",
+        "scrape_date": "2026-07-03"
+      },
+      "aum": {
+        "value": "12,121.18 crore",
+        "source_url": "https://groww.in/mutual-funds/hdfc-gold-etf-fund-of-fund-direct-plan-growth",
+        "scrape_date": "2026-07-03"
+      }
+    }
+  }
+}

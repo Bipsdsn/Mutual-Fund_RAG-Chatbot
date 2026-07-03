@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>HDFC Mutual Fund — FAQ Assistant - Error</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline": "#75777f",
+                        "primary": "#00081e",
+                        "tertiary-fixed": "#ffdbc7",
+                        "surface-container": "#efedf1",
+                        "on-primary-fixed-variant": "#34466d",
+                        "surface-container-high": "#e9e7eb",
+                        "background": "#fbf8fc",
+                        "surface-tint": "#4c5e86",
+                        "on-secondary-container": "#00716d",
+                        "on-error-container": "#93000a",
+                        "surface-dim": "#dbd9dd",
+                        "on-tertiary-fixed": "#311300",
+                        "on-primary-container": "#7687b2",
+                        "primary-fixed": "#d9e2ff",
+                        "on-surface": "#1b1b1e",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed-variant": "#673c1e",
+                        "on-secondary": "#ffffff",
+                        "on-background": "#1b1b1e",
+                        "on-secondary-fixed-variant": "#00504d",
+                        "secondary-container": "#7df6ef",
+                        "primary-container": "#0a1f44",
+                        "inverse-on-surface": "#f2f0f4",
+                        "surface-container-low": "#f5f3f7",
+                        "inverse-primary": "#b4c6f4",
+                        "error": "#ba1a1a",
+                        "surface-container-highest": "#e4e2e5",
+                        "on-primary-fixed": "#041a3f",
+                        "outline-variant": "#c5c6cf",
+                        "surface": "#fbf8fc",
+                        "on-primary": "#ffffff",
+                        "secondary-fixed-dim": "#5ed9d3",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed-dim": "#b4c6f4",
+                        "tertiary-container": "#391700",
+                        "inverse-surface": "#303033",
+                        "tertiary-fixed-dim": "#f8b992",
+                        "secondary": "#006a66",
+                        "tertiary": "#150500",
+                        "surface-variant": "#e4e2e5",
+                        "on-surface-variant": "#44464e",
+                        "on-tertiary-container": "#b37c59",
+                        "on-tertiary": "#ffffff",
+                        "surface-bright": "#fbf8fc",
+                        "on-error": "#ffffff",
+                        "secondary-fixed": "#7df6ef",
+                        "on-secondary-fixed": "#00201f"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "chat-max-width": "800px",
+                        "sm": "8px",
+                        "lg": "24px",
+                        "base": "4px",
+                        "xl": "32px",
+                        "container-max": "1200px",
+                        "md": "16px",
+                        "xxl": "48px",
+                        "xs": "4px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "headline-sm": ["Inter"],
+                        "label-md": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "headline-md-mobile": ["Inter"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "display-lg": ["32px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-sm": ["20px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "label-md": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.01em", "fontWeight": "600" }],
+                        "label-sm": ["12px", { "lineHeight": "1.2", "fontWeight": "500" }],
+                        "headline-md-mobile": ["20px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.filled {
+            font-variation-settings: 'FILL' 1;
+        }
+        
+        /* Ambient depth */
+        .ambient-shadow {
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+        }
+        
+        /* Animations */
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fade-up {
+            animation: fadeUp 0.3s ease-out forwards;
+        }
+
+        /* Glassmorphism utilities */
+        .glass-panel {
+            background: rgba(10, 31, 68, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-[#02040a] text-inverse-on-surface h-screen flex font-body-md antialiased overflow-hidden">
+<!-- WebGL Background -->
+<canvas class="fixed inset-0 w-full h-full -z-10" id="glcanvas"></canvas>
+<!-- Sidebar -->
+<aside class="w-[280px] h-full glass-panel flex flex-col flex-shrink-0 z-20 border-r border-white/10">
+<div class="p-lg border-b border-white/10 flex justify-between items-center">
+<h2 class="text-headline-sm font-semibold text-white">Chat History</h2>
+<!-- Dark Mode Toggle -->
+<button class="w-8 h-8 rounded-full hover:bg-white/10 transition-colors text-white/70 flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">light_mode</span>
+</button>
+</div>
+<div class="flex-1 overflow-y-auto p-md flex flex-col gap-sm">
+<button class="text-left px-md py-sm rounded-lg hover:bg-white/10 transition-colors text-body-md text-white/80 truncate">Exit Load for Top 100</button>
+<button class="text-left px-md py-sm rounded-lg hover:bg-white/10 transition-colors text-body-md text-white/80 truncate">NAV history</button>
+<button class="text-left px-md py-sm rounded-lg hover:bg-white/10 transition-colors text-body-md text-white/80 truncate">Expense Ratio Details</button>
+</div>
+</aside>
+<!-- Main Layout Wrapper -->
+<div class="flex-1 flex flex-col h-full relative z-10">
+<!-- TopAppBar -->
+<header class="w-full flex justify-between items-center px-lg glass-panel flex-shrink-0 h-[72px] border-b border-white/10 shadow-lg">
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-headline-sm text-primary-fixed">account_balance</span>
+<h1 class="text-headline-md font-headline-md font-bold text-white tracking-tight">HDFC Mutual Fund — FAQ Assistant</h1>
+</div>
+<div class="hidden md:flex items-center gap-lg">
+<span class="text-label-sm font-label-sm text-white/80 uppercase tracking-widest px-sm py-xs border border-white/30 rounded-full">Facts-only</span>
+<!-- Account Profile -->
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center border border-white/20 cursor-pointer hover:bg-primary-container/80 transition-colors">
+<span class="material-symbols-outlined">person</span>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow flex flex-col items-center pt-[48px] pb-[140px] px-md md:px-lg w-full overflow-y-auto relative">
+<!-- Chat Container -->
+<div class="w-full max-w-chat-max-width flex flex-col gap-lg">
+<!-- Assistant Message -->
+<div class="flex items-start gap-md animate-fade-up">
+<div class="w-10 h-10 rounded-full glass-panel flex items-center justify-center flex-shrink-0 border border-white/20">
+<span class="material-symbols-outlined text-secondary-fixed text-headline-sm filled" style="font-variation-settings: 'FILL' 1;">smart_toy</span>
+</div>
+<div class="glass-panel text-white p-lg rounded-xl rounded-tl-sm ambient-shadow max-w-[85%]">
+<p class="text-body-md font-body-md text-white/90">Hello. I am the HDFC Mutual Fund FAQ Assistant. How can I assist you with factual information today?</p>
+</div>
+</div>
+<!-- User Message -->
+<div class="flex items-start gap-md flex-row-reverse animate-fade-up" style="animation-delay: 100ms;">
+<div class="w-10 h-10 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-headline-sm">person</span>
+</div>
+<div class="bg-primary-container/80 backdrop-blur-md border border-white/10 text-white p-lg rounded-xl rounded-tr-sm ambient-shadow max-w-[85%]">
+<p class="text-body-md font-body-md">Can you explain the exit load for the Top 100 Fund?</p>
+</div>
+</div>
+<!-- Assistant Message (Loading/Processing prior to error) -->
+<div class="flex items-start gap-md animate-fade-up" style="animation-delay: 200ms;">
+<div class="w-10 h-10 rounded-full glass-panel flex items-center justify-center flex-shrink-0 border border-white/20">
+<span class="material-symbols-outlined text-secondary-fixed text-headline-sm filled" style="font-variation-settings: 'FILL' 1;">smart_toy</span>
+</div>
+<div class="glass-panel text-white/70 p-md rounded-xl rounded-tl-sm ambient-shadow flex items-center gap-sm">
+<div class="flex space-x-1">
+<div class="w-2 h-2 bg-white/50 rounded-full animate-bounce" style="animation-delay: 0ms;"></div>
+<div class="w-2 h-2 bg-white/50 rounded-full animate-bounce" style="animation-delay: 150ms;"></div>
+<div class="w-2 h-2 bg-white/50 rounded-full animate-bounce" style="animation-delay: 300ms;"></div>
+</div>
+</div>
+</div>
+<!-- Error Banner -->
+<div class="w-full mt-sm animate-fade-up" style="animation-delay: 400ms;">
+<div class="bg-[#2a080a]/80 backdrop-blur-md border border-error/40 rounded-lg p-md flex flex-col sm:flex-row items-start sm:items-center justify-between gap-md ambient-shadow relative overflow-hidden">
+<!-- Subtle accent bar -->
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-error"></div>
+<div class="flex items-center gap-sm ml-sm">
+<span class="material-symbols-outlined text-[#ffb4ab]">error</span>
+<p class="text-body-md font-body-md text-[#ffb4ab]">The service is temporarily unavailable. Please try again shortly.</p>
+</div>
+<button class="flex-shrink-0 bg-transparent hover:bg-white/5 transition-colors border border-error/50 text-[#ffb4ab] font-label-md text-label-md px-lg py-sm rounded-full flex items-center gap-xs shadow-sm ml-sm sm:ml-0">
+<span class="material-symbols-outlined text-[18px]">refresh</span>
+                        Retry
+                    </button>
+</div>
+</div>
+</div>
+</main>
+<!-- Composer Bar (Disabled State) -->
+<div class="absolute bottom-[60px] w-full z-40 px-md md:px-lg py-md pb-0">
+<div class="max-w-chat-max-width mx-auto relative flex items-center">
+<input class="w-full glass-panel text-white rounded-full py-md pl-lg pr-[60px] focus:outline-none focus:ring-2 focus:ring-secondary-fixed/50 focus:border-transparent text-body-md font-body-md ambient-shadow opacity-60 cursor-not-allowed placeholder-white/50" disabled="" placeholder="Type your message..." type="text"/>
+<button class="absolute right-md w-10 h-10 rounded-full bg-white/10 text-white/50 flex items-center justify-center transition-colors cursor-not-allowed" disabled="">
+<span class="material-symbols-outlined">send</span>
+</button>
+</div>
+</div>
+<!-- Footer -->
+<footer class="absolute bottom-0 w-full z-50 flex flex-col items-center py-md space-y-base bg-gradient-to-t from-[#02040a] to-transparent pt-lg">
+<p class="text-label-sm font-label-sm text-white/60">Facts-only. No investment advice.</p>
+<div class="flex gap-lg flex-wrap justify-center">
+<a class="text-label-sm font-label-sm text-white/60 hover:text-white transition-colors" href="#">Expense Ratio</a>
+<a class="text-label-sm font-label-sm text-white/60 hover:text-white transition-colors" href="#">Lock-in</a>
+<a class="text-label-sm font-label-sm text-white/60 hover:text-white transition-colors" href="#">NAV</a>
+<a class="text-label-sm font-label-sm text-white/60 hover:text-white transition-colors" href="#">Exit Load</a>
+</div>
+</footer>
+</div>
+<script>
+    // WebGL Shader Setup
+    const canvas = document.getElementById('glcanvas');
+    const gl = canvas.getContext('webgl');
+
+    if (gl) {
+        const vertexShaderSource = `
+            attribute vec4 aVertexPosition;
+            varying vec2 v_texCoord;
+            void main() {
+                gl_Position = aVertexPosition;
+                v_texCoord = aVertexPosition.xy * 0.5 + 0.5;
+            }
+        `;
+
+        const fragmentShaderSource = `
+            precision highp float;
+
+            uniform float u_time;
+            uniform vec2 u_resolution;
+            uniform vec2 u_mouse;
+
+            varying vec2 v_texCoord;
+
+            float hash(vec2 p) {
+                p = fract(p * vec2(123.34, 456.21));
+                p += dot(p, p + 45.32);
+                return fract(p.x * p.y);
+            }
+
+            void main() {
+                vec2 uv = v_texCoord;
+                vec2 aspect_uv = (uv - 0.5) * vec2(u_resolution.x / u_resolution.y, 1.0) + 0.5;
+                
+                // Background deep space gradient
+                vec3 color = vec3(0.02, 0.04, 0.1) * (1.0 - length(uv - 0.5));
+                
+                // Layered stars
+                for(float i = 0.0; i < 3.0; i++) {
+                    float size = 100.0 + i * 50.0;
+                    vec2 grid_uv = fract(aspect_uv * size) - 0.5;
+                    vec2 id = floor(aspect_uv * size);
+                    
+                    float h = hash(id);
+                    
+                    if (h > 0.95) {
+                        float dist = length(grid_uv);
+                        // Twinkle effect
+                        float twinkle = sin(u_time * (h * 5.0) + h * 10.0) * 0.5 + 0.5;
+                        float star = 0.002 / dist * twinkle;
+                        
+                        // Color variations (blueish, yellowish, white)
+                        vec3 starColor = vec3(0.8, 0.9, 1.0);
+                        if(h > 0.98) starColor = vec3(1.0, 0.9, 0.7);
+                        
+                        color += star * starColor;
+                    }
+                }
+                
+                // Subtle nebula glow
+                float nebula = sin(uv.x * 2.0 + u_time * 0.1) * cos(uv.y * 3.0 - u_time * 0.05);
+                color += vec3(0.05, 0.02, 0.08) * max(0.0, nebula);
+
+                gl_FragColor = vec4(color, 1.0);
+            }
+        `;
+
+        function createShader(gl, type, source) {
+            const shader = gl.createShader(type);
+            gl.shaderSource(shader, source);
+            gl.compileShader(shader);
+            return shader;
+        }
+
+        const vertexShader = createShader(gl, gl.VERTEX_SHADER, vertexShaderSource);
+        const fragmentShader = createShader(gl, gl.FRAGMENT_SHADER, fragmentShaderSource);
+
+        const shaderProgram = gl.createProgram();
+        gl.attachShader(shaderProgram, vertexShader);
+        gl.attachShader(shaderProgram, fragmentShader);
+        gl.linkProgram(shaderProgram);
+        gl.useProgram(shaderProgram);
+
+        const positionBuffer = gl.createBuffer();
+        gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
+        const positions = [
+            -1.0,  1.0,
+             1.0,  1.0,
+            -1.0, -1.0,
+             1.0, -1.0,
+        ];
+        gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(positions), gl.STATIC_DRAW);
+
+        const positionAttributeLocation = gl.getAttribLocation(shaderProgram, "aVertexPosition");
+        gl.enableVertexAttribArray(positionAttributeLocation);
+        gl.vertexAttribPointer(positionAttributeLocation, 2, gl.FLOAT, false, 0, 0);
+
+        const timeLocation = gl.getUniformLocation(shaderProgram, "u_time");
+        const resolutionLocation = gl.getUniformLocation(shaderProgram, "u_resolution");
+
+        function render(time) {
+            time *= 0.001; 
+
+            // Resize canvas to display size
+            if (canvas.width !== canvas.clientWidth || canvas.height !== canvas.clientHeight) {
+                canvas.width = canvas.clientWidth;
+                canvas.height = canvas.clientHeight;
+                gl.viewport(0, 0, canvas.width, canvas.height);
+            }
+
+            gl.uniform1f(timeLocation, time);
+            gl.uniform2f(resolutionLocation, canvas.width, canvas.height);
+
+            gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+
+            requestAnimationFrame(render);
+        }
+
+        requestAnimationFrame(render);
+    }
+</script>
+</body></html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Welcome - HDFC Mutual Fund FAQ Assistant</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "outline": "#75777f",
+                      "primary": "#00081e",
+                      "tertiary-fixed": "#ffdbc7",
+                      "surface-container": "#efedf1",
+                      "on-primary-fixed-variant": "#34466d",
+                      "surface-container-high": "#e9e7eb",
+                      "background": "#fbf8fc",
+                      "surface-tint": "#4c5e86",
+                      "on-secondary-container": "#00716d",
+                      "on-error-container": "#93000a",
+                      "surface-dim": "#dbd9dd",
+                      "on-tertiary-fixed": "#311300",
+                      "on-primary-container": "#7687b2",
+                      "primary-fixed": "#d9e2ff",
+                      "on-surface": "#1b1b1e",
+                      "error-container": "#ffdad6",
+                      "on-tertiary-fixed-variant": "#673c1e",
+                      "on-secondary": "#ffffff",
+                      "on-background": "#1b1b1e",
+                      "on-secondary-fixed-variant": "#00504d",
+                      "secondary-container": "#7df6ef",
+                      "primary-container": "#0a1f44",
+                      "inverse-on-surface": "#f2f0f4",
+                      "surface-container-low": "#f5f3f7",
+                      "inverse-primary": "#b4c6f4",
+                      "error": "#ba1a1a",
+                      "surface-container-highest": "#e4e2e5",
+                      "on-primary-fixed": "#041a3f",
+                      "outline-variant": "#c5c6cf",
+                      "surface": "#fbf8fc",
+                      "on-primary": "#ffffff",
+                      "secondary-fixed-dim": "#5ed9d3",
+                      "surface-container-lowest": "#ffffff",
+                      "primary-fixed-dim": "#b4c6f4",
+                      "tertiary-container": "#391700",
+                      "inverse-surface": "#303033",
+                      "tertiary-fixed-dim": "#f8b992",
+                      "secondary": "#006a66",
+                      "tertiary": "#150500",
+                      "surface-variant": "#e4e2e5",
+                      "on-surface-variant": "#44464e",
+                      "on-tertiary-container": "#b37c59",
+                      "on-tertiary": "#ffffff",
+                      "surface-bright": "#fbf8fc",
+                      "on-error": "#ffffff",
+                      "secondary-fixed": "#7df6ef",
+                      "on-secondary-fixed": "#00201f"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "chat-max-width": "800px",
+                      "sm": "8px",
+                      "lg": "24px",
+                      "base": "4px",
+                      "xl": "32px",
+                      "container-max": "1200px",
+                      "md": "16px",
+                      "xxl": "48px",
+                      "xs": "4px"
+              },
+              "fontFamily": {
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "headline-md": [
+                              "Inter"
+                      ],
+                      "display-lg": [
+                              "Inter"
+                      ],
+                      "headline-sm": [
+                              "Inter"
+                      ],
+                      "label-md": [
+                              "Inter"
+                      ],
+                      "label-sm": [
+                              "Inter"
+                      ],
+                      "headline-md-mobile": [
+                              "Inter"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-sm": [
+                              "20px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-md-mobile": [
+                              "20px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.5",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        body {
+            background-color: #f5f7fb;
+        }
+        .soft-shadow {
+            box-shadow: 0px 4px 20px rgba(10, 31, 68, 0.05);
+        }
+        .interactive-shadow:hover {
+            box-shadow: 0px 8px 30px rgba(10, 31, 68, 0.08);
+            transform: translateY(-2px);
+            transition: all 0.2s ease-in-out;
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-surface flex flex-col min-h-screen">
+<!-- TopAppBar from JSON -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-lg bg-primary-container text-on-primary bg-gradient-to-r from-primary-container to-on-primary-fixed-variant shadow-md full-width top-0 h-[72px]">
+<div class="flex items-center gap-md">
+<img alt="HDFC Mutual Fund Logo" class="w-10 h-10 rounded-DEFAULT" src="https://lh3.googleusercontent.com/aida/AP1WRLv5ypkZC4h5_tvnu3OmR9QXUfx67rN6qMaK4NcmSGYVYGrm0So3tkT_AnqAdfZWtaAibgFtzn3sQ24gw6NxEd-wVKCFRVcdDJyGnlIDfnSaTigLaW4dwHRe8qIPodidWCfq2iduL_Ooq_ZeeH05c_xqTWEWkQ_A4WJxbebf1T2JVTYvhTp1rUkWm15dTxdd05G0qS460oL8j4-BLwXOmco-kAVee-wexeI2VH9T1x6UQDSjd-H_i-3TrYU"/>
+<div>
+<h1 class="text-headline-sm font-headline-sm text-on-primary font-bold">HDFC Mutual Fund — FAQ Assistant</h1>
+<p class="text-label-sm font-label-sm text-on-primary opacity-80 hidden md:block">Answers only from official sources · updated May 2024</p>
+</div>
+</div>
+<div class="hidden md:flex items-center gap-sm">
+<span class="bg-secondary-container text-on-secondary-container px-sm py-xs rounded-full text-label-sm font-label-sm font-bold">Facts-only</span>
+</div>
+</header>
+<!-- Main Content Area -->
+<main class="flex-grow flex justify-center items-start pt-[120px] pb-[150px] px-md md:px-lg overflow-y-auto">
+<!-- Welcome Card -->
+<div class="w-full max-w-chat-max-width bg-surface-container-lowest rounded-xl p-lg md:p-xl soft-shadow border border-outline-variant/30 flex flex-col gap-lg">
+<div class="text-center flex flex-col gap-sm items-center">
+<span class="material-symbols-outlined text-display-lg text-secondary" style="font-variation-settings: 'FILL' 1;">forum</span>
+<h2 class="text-headline-md md:text-display-lg font-headline-md md:font-display-lg text-primary">Ask about HDFC Mutual Fund schemes</h2>
+<p class="text-body-md md:text-body-lg font-body-md md:font-body-lg text-on-surface-variant max-w-[600px]">
+                    I am an assistant designed to provide verified facts. I can help you find information such as expense ratio, lock-in periods, NAV, exit load, and taxation rules with direct links to official sources. I do not provide investment advice.
+                </p>
+</div>
+<!-- Covered Schemes Section -->
+<div class="flex flex-col gap-sm">
+<h3 class="text-label-md font-label-md text-on-surface-variant uppercase tracking-wider">Covered schemes</h3>
+<div class="flex flex-wrap gap-sm">
+<span class="bg-surface-container text-on-surface px-md py-sm rounded-full text-label-md font-label-md border border-outline-variant/50">HDFC Top 100</span>
+<span class="bg-surface-container text-on-surface px-md py-sm rounded-full text-label-md font-label-md border border-outline-variant/50">HDFC Mid-Cap Opportunities</span>
+<span class="bg-surface-container text-on-surface px-md py-sm rounded-full text-label-md font-label-md border border-outline-variant/50">HDFC Flexi Cap</span>
+<span class="bg-surface-container text-on-surface px-md py-sm rounded-full text-label-md font-label-md border border-outline-variant/50">HDFC Small Cap</span>
+<span class="bg-surface-container text-on-surface px-md py-sm rounded-full text-label-md font-label-md border border-outline-variant/50">HDFC Liquid Fund</span>
+<span class="bg-surface-container text-on-surface px-md py-sm rounded-full text-label-md font-label-md border border-outline-variant/50">HDFC Balanced Advantage</span>
+</div>
+</div>
+<!-- Try an Example Section -->
+<div class="flex flex-col gap-sm mt-md">
+<h3 class="text-label-md font-label-md text-on-surface-variant uppercase tracking-wider">Try an example</h3>
+<div class="flex flex-col gap-sm">
+<button class="interactive-shadow w-full text-left bg-surface-container-lowest border border-outline-variant/50 text-on-surface p-md rounded-lg flex items-center justify-between group">
+<span class="text-body-md font-body-md group-hover:text-primary transition-colors">What is the NAV of HDFC Top 100 Fund?</span>
+<span class="material-symbols-outlined text-outline group-hover:text-secondary transition-colors">arrow_forward</span>
+</button>
+<button class="interactive-shadow w-full text-left bg-surface-container-lowest border border-outline-variant/50 text-on-surface p-md rounded-lg flex items-center justify-between group">
+<span class="text-body-md font-body-md group-hover:text-primary transition-colors">What is the exit load for HDFC Flexi Cap?</span>
+<span class="material-symbols-outlined text-outline group-hover:text-secondary transition-colors">arrow_forward</span>
+</button>
+<button class="interactive-shadow w-full text-left bg-surface-container-lowest border border-outline-variant/50 text-on-surface p-md rounded-lg flex items-center justify-between group">
+<span class="text-body-md font-body-md group-hover:text-primary transition-colors">Show me the expense ratio for HDFC Small Cap.</span>
+<span class="material-symbols-outlined text-outline group-hover:text-secondary transition-colors">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer / Composer Bar from JSON -->
+<footer class="fixed bottom-0 w-full z-50 flex flex-col items-center py-md space-y-base bg-surface-container-lowest border-t border-outline-variant px-md md:px-lg pb-lg md:pb-xl">
+<div class="w-full max-w-chat-max-width flex gap-sm items-center bg-surface-container-lowest rounded-full border border-outline-variant/50 p-xs pl-md interactive-shadow focus-within:border-primary/50 focus-within:ring-1 focus-within:ring-primary/50 transition-all">
+<input class="flex-grow bg-transparent border-none focus:ring-0 text-body-md font-body-md text-on-surface placeholder:text-outline p-0" placeholder="Ask a question..." type="text"/>
+<button class="bg-gradient-to-r from-primary to-secondary text-on-primary px-lg py-sm rounded-full text-label-md font-label-md font-bold flex items-center gap-xs hover:opacity-90 transition-opacity">
+                Ask
+                <span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</div>
+<div class="flex gap-md pt-xs">
+<p class="text-label-sm font-label-sm text-on-surface-variant text-center opacity-80">Facts-only. No investment advice.</p>
+</div>
+</footer>
+</body></html>

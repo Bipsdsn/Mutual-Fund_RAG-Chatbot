@@ -1,0 +1,202 @@
+[
+  {
+    "id": "groww_mid_cap",
+    "url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+    "source_type": "groww_scheme_page",
+    "scheme_name": "HDFC Mid Cap Fund Direct Growth",
+    "scheme_category": "Equity — Mid Cap",
+    "fetch_mode": "html_js",
+    "default_data_type": "scheme_facts",
+    "title": "HDFC Mid Cap Fund — Groww scheme page"
+  },
+  {
+    "id": "groww_large_cap",
+    "url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
+    "source_type": "groww_scheme_page",
+    "scheme_name": "HDFC Large Cap Fund Direct Growth",
+    "scheme_category": "Equity — Large Cap",
+    "fetch_mode": "html_js",
+    "default_data_type": "scheme_facts",
+    "title": "HDFC Large Cap Fund — Groww scheme page"
+  },
+  {
+    "id": "groww_small_cap",
+    "url": "https://groww.in/mutual-funds/hdfc-small-cap-fund-direct-growth",
+    "source_type": "groww_scheme_page",
+    "scheme_name": "HDFC Small Cap Fund Direct Growth",
+    "scheme_category": "Equity — Small Cap",
+    "fetch_mode": "html_js",
+    "default_data_type": "scheme_facts",
+    "title": "HDFC Small Cap Fund — Groww scheme page"
+  },
+  {
+    "id": "groww_flexi_cap",
+    "url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
+    "source_type": "groww_scheme_page",
+    "scheme_name": "HDFC Flexi Cap Fund Direct Growth",
+    "scheme_category": "Equity — Flexi Cap",
+    "fetch_mode": "html_js",
+    "default_data_type": "scheme_facts",
+    "title": "HDFC Flexi Cap Fund (HDFC Equity Fund) — Groww scheme page"
+  },
+  {
+    "id": "groww_elss",
+    "url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
+    "source_type": "groww_scheme_page",
+    "scheme_name": "HDFC ELSS Tax Saver Fund Direct Plan Growth",
+    "scheme_category": "Equity — ELSS (Tax Saver)",
+    "fetch_mode": "html_js",
+    "default_data_type": "scheme_facts",
+    "title": "HDFC ELSS Tax Saver — Groww scheme page"
+  },
+  {
+    "id": "groww_gold_fof",
+    "url": "https://groww.in/mutual-funds/hdfc-gold-etf-fund-of-fund-direct-plan-growth",
+    "source_type": "groww_scheme_page",
+    "scheme_name": "HDFC Gold ETF Fund of Fund Direct Plan Growth",
+    "scheme_category": "Commodities — Gold",
+    "fetch_mode": "html_js",
+    "default_data_type": "scheme_facts",
+    "title": "HDFC Gold ETF Fund of Fund — Groww scheme page"
+  },
+  {
+    "id": "amc_factsheets",
+    "url": "https://www.hdfcfund.com/mutual-funds/factsheets",
+    "source_type": "amc_official",
+    "scheme_name": null,
+    "scheme_category": null,
+    "fetch_mode": "html_js",
+    "default_data_type": "scheme_facts",
+    "title": "HDFC MF Factsheets Portal"
+  },
+  {
+    "id": "amc_kim",
+    "url": "https://www.hdfcfund.com/mutual-funds/fund-documents/kim",
+    "source_type": "amc_official",
+    "scheme_name": null,
+    "scheme_category": null,
+    "fetch_mode": "html_js",
+    "default_data_type": "scheme_facts",
+    "title": "HDFC MF KIM Documents"
+  },
+  {
+    "id": "amc_offer_documents",
+    "url": "https://www.hdfcfund.com/statutory-disclosure/offer-document-disclosures",
+    "source_type": "amc_official",
+    "scheme_name": null,
+    "scheme_category": null,
+    "fetch_mode": "html_js",
+    "default_data_type": "scheme_facts",
+    "title": "HDFC MF Offer Documents (SID/SAI)"
+  },
+  {
+    "id": "amc_elss_official",
+    "url": "https://www.hdfcfund.com/explore/mutual-funds/hdfc-elss-tax-saver/direct",
+    "source_type": "amc_official",
+    "scheme_name": "HDFC ELSS Tax Saver Fund Direct Plan Growth",
+    "scheme_category": "Equity — ELSS (Tax Saver)",
+    "fetch_mode": "html_js",
+    "default_data_type": "lock_in",
+    "title": "HDFC ELSS Tax Saver — AMC official page (lock-in, tax benefits)"
+  },
+  {
+    "id": "amc_capital_gains_guide",
+    "url": "https://www.hdfcfund.com/learn/blog/how-get-capital-gain-statement-mutual-fund-schemes-india",
+    "source_type": "amc_official",
+    "scheme_name": null,
+    "scheme_category": null,
+    "fetch_mode": "html_js",
+    "default_data_type": "statement_guide",
+    "title": "How to Get Capital Gains Statement"
+  },
+  {
+    "id": "amc_cas_download",
+    "url": "https://www.hdfcfund.com/services/consolidated-account-statement",
+    "source_type": "amc_official",
+    "scheme_name": null,
+    "scheme_category": null,
+    "fetch_mode": "html_js",
+    "default_data_type": "statement_guide",
+    "title": "Download Consolidated Account Statement (CAS)"
+  },
+  {
+    "id": "amc_cas_faq",
+    "url": "https://www.hdfcfund.com/services/faqs/consolidated-account-statement",
+    "source_type": "amc_official",
+    "scheme_name": null,
+    "scheme_category": null,
+    "fetch_mode": "html_js",
+    "default_data_type": "statement_guide",
+    "title": "CAS FAQ (HDFC MF)"
+  },
+  {
+    "id": "amc_subscription_faq",
+    "url": "https://www.hdfcfund.com/services/faqs/subscription-related-faqs",
+    "source_type": "amc_official",
+    "scheme_name": null,
+    "scheme_category": null,
+    "fetch_mode": "html_js",
+    "default_data_type": "investor_education",
+    "title": "Subscription-Related FAQs (KYC, SID, KIM)"
+  },
+  {
+    "id": "sebi_riskometer",
+    "url": "https://investor.sebi.gov.in/riskometer.html",
+    "source_type": "sebi",
+    "scheme_name": null,
+    "scheme_category": null,
+    "fetch_mode": "html_static",
+    "default_data_type": "risk",
+    "title": "SEBI Riskometer Guide"
+  },
+  {
+    "id": "sebi_categorization_circular",
+    "url": "https://investor.sebi.gov.in/understanding_mf.html",
+    "source_type": "sebi",
+    "scheme_name": null,
+    "scheme_category": null,
+    "fetch_mode": "html_static",
+    "default_data_type": "sebi_category",
+    "title": "SEBI: Understanding Mutual Funds (scheme basics & categories)"
+  },
+  {
+    "id": "sebi_groww_categories_blog",
+    "url": "https://groww.in/blog/guide-to-sebi-new-categories-of-mutual-fund",
+    "source_type": "sebi",
+    "scheme_name": null,
+    "scheme_category": null,
+    "fetch_mode": "html_js",
+    "default_data_type": "sebi_category",
+    "title": "Groww Blog: Guide to SEBI Categories"
+  },
+  {
+    "id": "amfi_what_are_mf",
+    "url": "https://www.amfiindia.com/investor",
+    "source_type": "amfi",
+    "scheme_name": null,
+    "scheme_category": null,
+    "fetch_mode": "html_js",
+    "default_data_type": "investor_education",
+    "title": "AMFI: Investor section — what are Mutual Funds"
+  },
+  {
+    "id": "amfi_types_of_schemes",
+    "url": "https://www.amfiindia.com/investor/knowledge-center-info?zoneName=TypesOfMutualFundSchemes",
+    "source_type": "amfi",
+    "scheme_name": null,
+    "scheme_category": null,
+    "fetch_mode": "html_js",
+    "default_data_type": "investor_education",
+    "title": "AMFI: Types of Mutual Fund Schemes"
+  },
+  {
+    "id": "amfi_investor_faq",
+    "url": "https://www.amfiindia.com/investor/knowledge-center-info?zoneName=MythsAndFactsAboutMutualFunds",
+    "source_type": "amfi",
+    "scheme_name": null,
+    "scheme_category": null,
+    "fetch_mode": "html_js",
+    "default_data_type": "investor_education",
+    "title": "AMFI: Myths & Facts about Mutual Funds (investor FAQ)"
+  }
+]

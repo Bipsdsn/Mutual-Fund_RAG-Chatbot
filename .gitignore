@@ -1,0 +1,32 @@
+# ── Secrets ──────────────────────────────────────────────
+.env
+*.env
+!.env.example
+
+# ── Python ───────────────────────────────────────────────
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ── Generated data ───────────────────────────────────────
+data/chroma/          # production Chroma index (rebuilt locally, not deployed)
+data/raw_cache/       # scraped/browser-saved raw pages (large, transient)
+# data/local_index/ is COMMITTED on purpose: it's the prebuilt numpy index the
+# deployed backend serves from (see Docs/deployment.md). data/facts.json too.
+
+# ── Node / frontend ──────────────────────────────────────
+node_modules/
+frontend/dist/
+frontend/build/
+.vite/
+
+# ── OS / editor ──────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

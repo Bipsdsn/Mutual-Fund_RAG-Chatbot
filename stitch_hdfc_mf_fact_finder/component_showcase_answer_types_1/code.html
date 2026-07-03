@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Answer Type Variants Showcase</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline": "#75777f",
+                        "primary": "#00081e",
+                        "tertiary-fixed": "#ffdbc7",
+                        "surface-container": "#efedf1",
+                        "on-primary-fixed-variant": "#34466d",
+                        "surface-container-high": "#e9e7eb",
+                        "background": "#fbf8fc",
+                        "surface-tint": "#4c5e86",
+                        "on-secondary-container": "#00716d",
+                        "on-error-container": "#93000a",
+                        "surface-dim": "#dbd9dd",
+                        "on-tertiary-fixed": "#311300",
+                        "on-primary-container": "#7687b2",
+                        "primary-fixed": "#d9e2ff",
+                        "on-surface": "#1b1b1e",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed-variant": "#673c1e",
+                        "on-secondary": "#ffffff",
+                        "on-background": "#1b1b1e",
+                        "on-secondary-fixed-variant": "#00504d",
+                        "secondary-container": "#7df6ef",
+                        "primary-container": "#0a1f44",
+                        "inverse-on-surface": "#f2f0f4",
+                        "surface-container-low": "#f5f3f7",
+                        "inverse-primary": "#b4c6f4",
+                        "error": "#ba1a1a",
+                        "surface-container-highest": "#e4e2e5",
+                        "on-primary-fixed": "#041a3f",
+                        "outline-variant": "#c5c6cf",
+                        "surface": "#fbf8fc",
+                        "on-primary": "#ffffff",
+                        "secondary-fixed-dim": "#5ed9d3",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed-dim": "#b4c6f4",
+                        "tertiary-container": "#391700",
+                        "inverse-surface": "#303033",
+                        "tertiary-fixed-dim": "#f8b992",
+                        "secondary": "#006a66",
+                        "tertiary": "#150500",
+                        "surface-variant": "#e4e2e5",
+                        "on-surface-variant": "#44464e",
+                        "on-tertiary-container": "#b37c59",
+                        "on-tertiary": "#ffffff",
+                        "surface-bright": "#fbf8fc",
+                        "on-error": "#ffffff",
+                        "secondary-fixed": "#7df6ef",
+                        "on-secondary-fixed": "#00201f"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "chat-max-width": "800px",
+                        "sm": "8px",
+                        "lg": "24px",
+                        "base": "4px",
+                        "xl": "32px",
+                        "container-max": "1200px",
+                        "md": "16px",
+                        "xxl": "48px",
+                        "xs": "4px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "headline-sm": ["Inter"],
+                        "label-md": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "headline-md-mobile": ["Inter"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "display-lg": ["32px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-sm": ["20px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "label-md": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.01em", "fontWeight": "600" }],
+                        "label-sm": ["12px", { "lineHeight": "1.2", "fontWeight": "500" }],
+                        "headline-md-mobile": ["20px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined[data-weight="fill"] {
+            font-variation-settings: 'FILL' 1;
+        }
+        
+        .bubble-shadow {
+            box-shadow: 0px 4px 20px rgba(10, 31, 68, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-background min-h-screen text-on-surface font-body-lg flex flex-col items-center pb-xxl">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-lg bg-primary-container h-[72px] bg-gradient-to-r from-primary-container to-on-primary-fixed-variant shadow-sm shadow-md">
+<div class="flex items-center gap-md">
+<span class="text-headline-md font-headline-md font-bold text-on-primary">HDFC Mutual Fund — FAQ Assistant</span>
+</div>
+<div class="hidden md:flex gap-lg">
+<!-- Not a real nav, just a trailing action -->
+<span class="text-label-sm font-label-sm text-on-primary bg-on-primary-fixed-variant px-md py-sm rounded-full border border-secondary flex items-center gap-sm">
+<span class="material-symbols-outlined text-[16px]" data-icon="policy">policy</span>
+                 Facts-only
+             </span>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="w-full max-w-chat-max-width mt-[96px] px-md md:px-0 flex flex-col gap-lg pb-xl">
+<div class="mb-md">
+<h1 class="text-display-lg font-display-lg text-primary mb-sm">Answer Type Variants</h1>
+<p class="text-body-md font-body-md text-on-surface-variant">Reference gallery for assistant response states and edge cases.</p>
+</div>
+<!-- 1. Factual -->
+<div class="bg-surface-container-lowest bubble-shadow rounded-xl border border-outline-variant/30 p-lg flex flex-col gap-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-md">
+<div class="w-[32px] h-[32px] rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[18px]" data-icon="smart_toy">smart_toy</span>
+</div>
+<span class="bg-primary-fixed text-on-primary-fixed text-[10px] font-label-md uppercase tracking-wider px-sm py-xs rounded-full">Factual</span>
+</div>
+</div>
+<div class="text-body-md font-body-md text-primary">
+                The current Expense Ratio for the HDFC Flexi Cap Fund is 1.62% for the Regular Plan and 0.89% for the Direct Plan.
+            </div>
+<div class="pt-sm border-t border-surface-variant flex items-center gap-sm text-label-sm font-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]" data-icon="link">link</span>
+<a class="hover:text-secondary underline decoration-outline-variant underline-offset-2" href="#">HDFC Flexi Cap Scheme Information Document</a>
+<span class="mx-sm text-outline-variant">•</span>
+<span>As of Oct 31, 2023</span>
+</div>
+</div>
+<!-- 2. Facts-only refusal -->
+<div class="bg-surface-container-lowest bubble-shadow rounded-xl border-l-[4px] border-l-tertiary-fixed-dim border border-outline-variant/30 p-lg flex flex-col gap-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-md">
+<div class="w-[32px] h-[32px] rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]" data-icon="info">info</span>
+</div>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed text-[10px] font-label-md uppercase tracking-wider px-sm py-xs rounded-full">Facts Only</span>
+</div>
+</div>
+<div class="text-body-md font-body-md text-primary">
+                I can provide factual information about mutual fund schemes, such as NAV, expense ratios, and asset allocation. However, I cannot offer personalized investment advice or recommend specific funds for your portfolio.
+            </div>
+<div class="pt-sm border-t border-surface-variant flex items-center gap-sm text-label-sm font-label-sm text-secondary">
+<span class="material-symbols-outlined text-[14px]" data-icon="school">school</span>
+<a class="hover:underline" href="#">Learn more about choosing a mutual fund</a>
+</div>
+</div>
+<!-- 3. Out-of-scope -->
+<div class="bg-surface-container-lowest bubble-shadow rounded-xl border-l-[4px] border-l-on-tertiary-container border border-outline-variant/30 p-lg flex flex-col gap-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-md">
+<div class="w-[32px] h-[32px] rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]" data-icon="explore_off">explore_off</span>
+</div>
+<span class="bg-surface-variant text-on-surface-variant border border-outline-variant text-[10px] font-label-md uppercase tracking-wider px-sm py-xs rounded-full">Out of Scope</span>
+</div>
+</div>
+<div class="text-body-md font-body-md text-primary">
+                I can currently answer questions specifically about these 6 schemes:
+                <ul class="list-disc pl-lg mt-sm space-y-xs text-on-surface-variant">
+<li>HDFC Flexi Cap Fund</li>
+<li>HDFC Top 100 Fund</li>
+<li>HDFC Mid-Cap Opportunities Fund</li>
+<li>HDFC Small Cap Fund</li>
+<li>HDFC Balanced Advantage Fund</li>
+<li>HDFC Liquid Fund</li>
+</ul>
+</div>
+</div>
+<!-- 4. No-source -->
+<div class="bg-surface-container-lowest bubble-shadow rounded-xl border-l-[4px] border-l-outline border border-outline-variant/30 p-lg flex flex-col gap-md opacity-80">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-md">
+<div class="w-[32px] h-[32px] rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]" data-icon="search_off">search_off</span>
+</div>
+<span class="bg-surface-container text-on-surface-variant border border-outline-variant/50 text-[10px] font-label-md uppercase tracking-wider px-sm py-xs rounded-full">No Source</span>
+</div>
+</div>
+<div class="text-body-md font-body-md text-on-surface-variant italic">
+                I don't have the factual information required to answer this question from the official scheme documents.
+            </div>
+</div>
+<!-- 5. Privacy rejection -->
+<div class="bg-surface-container-lowest bubble-shadow rounded-xl border-l-[4px] border-l-[#d81b60] border border-outline-variant/30 p-lg flex flex-col gap-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-md">
+<div class="w-[32px] h-[32px] rounded-full bg-surface-container-high flex items-center justify-center text-[#d81b60]">
+<span class="material-symbols-outlined text-[18px]" data-icon="security">security</span>
+</div>
+<span class="bg-[#fce4ec] text-[#d81b60] text-[10px] font-label-md uppercase tracking-wider px-sm py-xs rounded-full">Privacy</span>
+</div>
+</div>
+<div class="text-body-md font-body-md text-primary">
+                For your security, personal information (such as account numbers or PAN) is blocked from this query. Please do not share sensitive personal data in this chat.
+            </div>
+</div>
+<!-- 6. Service issue -->
+<div class="bg-error-container bubble-shadow rounded-xl border border-error/20 p-lg flex flex-col gap-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-md">
+<div class="w-[32px] h-[32px] rounded-full bg-error flex items-center justify-center text-on-error">
+<span class="material-symbols-outlined text-[18px]" data-icon="error">error</span>
+</div>
+<span class="bg-error text-on-error text-[10px] font-label-md uppercase tracking-wider px-sm py-xs rounded-full">Service Issue</span>
+</div>
+</div>
+<div class="text-body-md font-body-md text-on-error-container">
+                The document retrieval service is temporarily unavailable. Please try your query again in a few moments.
+            </div>
+<div class="pt-sm flex items-center gap-sm">
+<button class="bg-error text-on-error px-md py-sm rounded border border-error hover:bg-error/90 text-label-md font-label-md transition-colors">
+                    Retry Request
+                </button>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="fixed bottom-0 w-full z-50 flex flex-col items-center py-md space-y-base bg-surface-container-lowest border-t border-outline-variant bg-surface-container-lowest">
+<div class="flex gap-lg text-label-sm font-label-sm">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Expense Ratio</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Lock-in</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">NAV</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Exit Load</a>
+</div>
+<div class="text-label-sm font-label-sm text-on-surface-variant">
+            Facts-only. No investment advice.
+        </div>
+</footer>
+</body></html>

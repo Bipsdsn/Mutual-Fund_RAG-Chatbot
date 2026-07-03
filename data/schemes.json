@@ -1,0 +1,106 @@
+{
+  "schemes": [
+    {
+      "canonical_name": "HDFC Mid Cap Fund Direct Growth",
+      "short_name": "HDFC Mid Cap Fund",
+      "category": "Equity — Mid Cap",
+      "url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+      "has_lock_in": false,
+      "aliases": [
+        "mid cap",
+        "midcap",
+        "mid-cap",
+        "hdfc mid cap",
+        "hdfc midcap",
+        "hdfc mid cap fund",
+        "hdfc mid cap fund direct growth"
+      ]
+    },
+    {
+      "canonical_name": "HDFC Large Cap Fund Direct Growth",
+      "short_name": "HDFC Large Cap Fund",
+      "category": "Equity — Large Cap",
+      "url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
+      "has_lock_in": false,
+      "aliases": [
+        "large cap",
+        "largecap",
+        "large-cap",
+        "hdfc large cap",
+        "hdfc largecap",
+        "hdfc large cap fund",
+        "hdfc large cap fund direct growth"
+      ]
+    },
+    {
+      "canonical_name": "HDFC Small Cap Fund Direct Growth",
+      "short_name": "HDFC Small Cap Fund",
+      "category": "Equity — Small Cap",
+      "url": "https://groww.in/mutual-funds/hdfc-small-cap-fund-direct-growth",
+      "has_lock_in": false,
+      "aliases": [
+        "small cap",
+        "smallcap",
+        "small-cap",
+        "hdfc small cap",
+        "hdfc smallcap",
+        "hdfc small cap fund",
+        "hdfc small cap fund direct growth"
+      ]
+    },
+    {
+      "canonical_name": "HDFC Flexi Cap Fund Direct Growth",
+      "short_name": "HDFC Flexi Cap Fund",
+      "category": "Equity — Flexi Cap",
+      "url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
+      "has_lock_in": false,
+      "aliases": [
+        "flexi cap",
+        "flexicap",
+        "flexi-cap",
+        "hdfc flexi cap",
+        "hdfc flexicap",
+        "hdfc flexi cap fund",
+        "hdfc equity fund",
+        "equity fund",
+        "hdfc equity"
+      ]
+    },
+    {
+      "canonical_name": "HDFC ELSS Tax Saver Fund Direct Plan Growth",
+      "short_name": "HDFC ELSS Tax Saver",
+      "category": "Equity — ELSS (Tax Saver)",
+      "url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
+      "has_lock_in": true,
+      "lock_in_years": 3,
+      "aliases": [
+        "elss",
+        "tax saver",
+        "taxsaver",
+        "hdfc elss",
+        "hdfc tax saver",
+        "elss tax saver",
+        "hdfc elss tax saver",
+        "80c fund",
+        "section 80c fund"
+      ]
+    },
+    {
+      "canonical_name": "HDFC Gold ETF Fund of Fund Direct Plan Growth",
+      "short_name": "HDFC Gold ETF FoF",
+      "category": "Commodities — Gold",
+      "url": "https://groww.in/mutual-funds/hdfc-gold-etf-fund-of-fund-direct-plan-growth",
+      "has_lock_in": false,
+      "aliases": [
+        "gold",
+        "gold etf",
+        "gold fof",
+        "gold fund of fund",
+        "hdfc gold",
+        "hdfc gold etf",
+        "hdfc gold etf fof",
+        "hdfc gold etf fund of fund"
+      ]
+    }
+  ]
+}

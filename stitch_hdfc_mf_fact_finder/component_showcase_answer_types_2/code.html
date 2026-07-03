@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Answer Type Variants Showcase</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "surface-container": "#efedf1",
+                "on-tertiary-fixed": "#311300",
+                "error-container": "#ffdad6",
+                "surface-variant": "#e4e2e5",
+                "on-secondary-fixed-variant": "#00504d",
+                "tertiary-container": "#391700",
+                "on-secondary": "#ffffff",
+                "tertiary": "#150500",
+                "on-error-container": "#93000a",
+                "on-surface-variant": "#44464e",
+                "secondary": "#006a66",
+                "inverse-on-surface": "#f2f0f4",
+                "surface-container-high": "#e9e7eb",
+                "surface-container-low": "#f5f3f7",
+                "surface-tint": "#4c5e86",
+                "error": "#ba1a1a",
+                "surface-dim": "#dbd9dd",
+                "surface-bright": "#fbf8fc",
+                "tertiary-fixed-dim": "#f8b992",
+                "on-primary-fixed-variant": "#34466d",
+                "on-primary-container": "#7687b2",
+                "on-secondary-container": "#00716d",
+                "tertiary-fixed": "#ffdbc7",
+                "primary": "#00081e",
+                "on-tertiary": "#ffffff",
+                "surface": "#fbf8fc",
+                "primary-container": "#0a1f44",
+                "on-error": "#ffffff",
+                "secondary-fixed": "#7df6ef",
+                "on-primary-fixed": "#041a3f",
+                "secondary-container": "#7df6ef",
+                "on-tertiary-container": "#b37c59",
+                "surface-container-highest": "#e4e2e5",
+                "on-primary": "#ffffff",
+                "inverse-surface": "#303033",
+                "on-background": "#1b1b1e",
+                "outline": "#75777f",
+                "primary-fixed": "#d9e2ff",
+                "on-surface": "#1b1b1e",
+                "inverse-primary": "#b4c6f4",
+                "outline-variant": "#c5c6cf",
+                "on-tertiary-fixed-variant": "#673c1e",
+                "on-secondary-fixed": "#00201f",
+                "primary-fixed-dim": "#b4c6f4",
+                "surface-container-lowest": "#ffffff",
+                "background": "#fbf8fc",
+                "secondary-fixed-dim": "#5ed9d3"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "lg": "24px",
+                "xxl": "48px",
+                "chat-max-width": "800px",
+                "xl": "32px",
+                "sm": "8px",
+                "md": "16px",
+                "container-max": "1200px",
+                "base": "4px",
+                "xs": "4px"
+        },
+        "fontFamily": {
+                "label-sm": [
+                        "Inter"
+                ],
+                "display-lg": [
+                        "Inter"
+                ],
+                "body-lg": [
+                        "Inter"
+                ],
+                "headline-sm": [
+                        "Inter"
+                ],
+                "body-md": [
+                        "Inter"
+                ],
+                "headline-md-mobile": [
+                        "Inter"
+                ],
+                "headline-md": [
+                        "Inter"
+                ],
+                "label-md": [
+                        "Inter"
+                ]
+        },
+        "fontSize": {
+                "label-sm": [
+                        "12px",
+                        {
+                                "lineHeight": "1.2",
+                                "fontWeight": "500"
+                        }
+                ],
+                "display-lg": [
+                        "32px",
+                        {
+                                "lineHeight": "1.2",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-sm": [
+                        "20px",
+                        {
+                                "lineHeight": "1.4",
+                                "fontWeight": "600"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "1.5",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-md-mobile": [
+                        "20px",
+                        {
+                                "lineHeight": "1.3",
+                                "fontWeight": "600"
+                        }
+                ],
+                "headline-md": [
+                        "24px",
+                        {
+                                "lineHeight": "1.3",
+                                "letterSpacing": "-0.01em",
+                                "fontWeight": "600"
+                        }
+                ],
+                "label-md": [
+                        "14px",
+                        {
+                                "lineHeight": "1.2",
+                                "letterSpacing": "0.01em",
+                                "fontWeight": "600"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined[data-weight="fill"] {
+            font-variation-settings: 'FILL' 1;
+        }
+        
+        .bubble-shadow {
+            box-shadow: 0px 4px 20px rgba(10, 31, 68, 0.05);
+        }
+        .dark .bubble-shadow {
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+        }
+        
+        #glcanvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-background dark:bg-transparent min-h-screen text-on-surface dark:text-gray-100 font-body-lg flex pb-xxl">
+<canvas id="glcanvas"></canvas>
+<!-- Sidebar -->
+<aside class="fixed left-0 top-0 h-full w-[280px] bg-surface-container-low dark:bg-gray-900/80 backdrop-blur-md border-r border-outline-variant dark:border-gray-700 z-40 flex flex-col transition-colors">
+<div class="p-lg border-b border-outline-variant dark:border-gray-700">
+<span class="text-headline-sm font-headline-sm font-bold text-primary dark:text-gray-100 flex items-center gap-sm">
+<span class="material-symbols-outlined text-[24px]" data-icon="history">history</span> Chat History
+        </span>
+</div>
+<div class="flex-1 overflow-y-auto p-md flex flex-col gap-sm">
+<div class="p-sm rounded-lg hover:bg-surface-variant dark:hover:bg-gray-800 cursor-pointer transition-colors text-body-md font-body-md text-on-surface-variant dark:text-gray-300">
+            HDFC Flexi Cap Expense Ratio
+        </div>
+<div class="p-sm rounded-lg hover:bg-surface-variant dark:hover:bg-gray-800 cursor-pointer transition-colors text-body-md font-body-md text-on-surface-variant dark:text-gray-300">
+            Best funds for 2024?
+        </div>
+<div class="p-sm rounded-lg hover:bg-surface-variant dark:hover:bg-gray-800 cursor-pointer transition-colors text-body-md font-body-md text-on-surface-variant dark:text-gray-300">
+            Nav of Top 100
+        </div>
+</div>
+<div class="p-lg border-t border-outline-variant dark:border-gray-700 flex items-center justify-between">
+<span class="text-label-md font-label-md text-on-surface-variant dark:text-gray-300">Dark Mode</span>
+<button class="w-10 h-6 bg-surface-variant dark:bg-primary-fixed rounded-full relative transition-colors focus:outline-none" id="darkModeToggle">
+<span class="absolute top-1 left-1 bg-surface-container-lowest w-4 h-4 rounded-full transition-transform transform dark:translate-x-4"></span>
+</button>
+</div>
+</aside>
+<div class="flex-1 ml-[280px] flex flex-col items-center">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-[280px] right-0 z-50 flex justify-between items-center px-lg bg-primary-container dark:bg-gray-900/90 backdrop-blur-md h-[72px] bg-gradient-to-r from-primary-container to-on-primary-fixed-variant dark:from-gray-900 dark:to-gray-800 shadow-sm shadow-md transition-colors border-b dark:border-gray-700">
+<div class="flex items-center gap-md">
+<span class="text-headline-md font-headline-md font-bold text-on-primary">HDFC Mutual Fund — FAQ Assistant</span>
+</div>
+<div class="flex gap-lg items-center">
+<!-- Not a real nav, just a trailing action -->
+<span class="text-label-sm font-label-sm text-on-primary bg-on-primary-fixed-variant dark:bg-gray-700 px-md py-sm rounded-full border border-secondary dark:border-gray-600 flex items-center gap-sm">
+<span class="material-symbols-outlined text-[16px]" data-icon="policy">policy</span>
+                 Facts-only
+             </span>
+<!-- Account Section -->
+<div class="flex items-center gap-sm text-on-primary cursor-pointer hover:opacity-80 transition-opacity">
+<div class="w-[32px] h-[32px] rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-label-md font-bold">
+                    JD
+                </div>
+<span class="text-label-md font-label-md hidden md:inline">John Doe</span>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="w-full max-w-chat-max-width mt-[96px] px-md md:px-0 flex flex-col gap-lg pb-xl">
+<div class="mb-md">
+<h1 class="text-display-lg font-display-lg text-primary dark:text-gray-100 mb-sm drop-shadow-md">Answer Type Variants</h1>
+<p class="text-body-md font-body-md text-on-surface-variant dark:text-gray-300 drop-shadow-sm">Reference gallery for assistant response states and edge cases.</p>
+</div>
+<!-- 1. Factual -->
+<div class="bg-surface-container-lowest dark:bg-gray-800/80 backdrop-blur-sm bubble-shadow rounded-xl border border-outline-variant/30 dark:border-gray-600 p-lg flex flex-col gap-md transition-colors">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-md">
+<div class="w-[32px] h-[32px] rounded-full bg-secondary-container dark:bg-teal-900 flex items-center justify-center text-on-secondary-container dark:text-teal-200">
+<span class="material-symbols-outlined text-[18px]" data-icon="smart_toy">smart_toy</span>
+</div>
+<span class="bg-primary-fixed dark:bg-indigo-900 text-on-primary-fixed dark:text-indigo-200 text-[10px] font-label-md uppercase tracking-wider px-sm py-xs rounded-full">Factual</span>
+</div>
+</div>
+<div class="text-body-md font-body-md text-primary dark:text-gray-200">
+                The current Expense Ratio for the HDFC Flexi Cap Fund is 1.62% for the Regular Plan and 0.89% for the Direct Plan.
+            </div>
+<div class="pt-sm border-t border-surface-variant dark:border-gray-700 flex items-center gap-sm text-label-sm font-label-sm text-on-surface-variant dark:text-gray-400">
+<span class="material-symbols-outlined text-[14px]" data-icon="link">link</span>
+<a class="hover:text-secondary dark:hover:text-teal-300 underline decoration-outline-variant dark:decoration-gray-500 underline-offset-2" href="#">HDFC Flexi Cap Scheme Information Document</a>
+<span class="mx-sm text-outline-variant dark:text-gray-600">•</span>
+<span>As of Oct 31, 2023</span>
+</div>
+</div>
+<!-- 2. Facts-only refusal -->
+<div class="bg-surface-container-lowest dark:bg-gray-800/80 backdrop-blur-sm bubble-shadow rounded-xl border-l-[4px] border-l-tertiary-fixed-dim dark:border-l-orange-500 border border-outline-variant/30 dark:border-gray-600 p-lg flex flex-col gap-md transition-colors">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-md">
+<div class="w-[32px] h-[32px] rounded-full bg-surface-container-high dark:bg-gray-700 flex items-center justify-center text-on-surface-variant dark:text-gray-300">
+<span class="material-symbols-outlined text-[18px]" data-icon="info">info</span>
+</div>
+<span class="bg-tertiary-fixed dark:bg-orange-900/50 text-on-tertiary-fixed dark:text-orange-200 text-[10px] font-label-md uppercase tracking-wider px-sm py-xs rounded-full">Facts Only</span>
+</div>
+</div>
+<div class="text-body-md font-body-md text-primary dark:text-gray-200">
+                I can provide factual information about mutual fund schemes, such as NAV, expense ratios, and asset allocation. However, I cannot offer personalized investment advice or recommend specific funds for your portfolio.
+            </div>
+<div class="pt-sm border-t border-surface-variant dark:border-gray-700 flex items-center gap-sm text-label-sm font-label-sm text-secondary dark:text-teal-400">
+<span class="material-symbols-outlined text-[14px]" data-icon="school">school</span>
+<a class="hover:underline" href="#">Learn more about choosing a mutual fund</a>
+</div>
+</div>
+<!-- 3. Out-of-scope -->
+<div class="bg-surface-container-lowest dark:bg-gray-800/80 backdrop-blur-sm bubble-shadow rounded-xl border-l-[4px] border-l-on-tertiary-container dark:border-l-gray-400 border border-outline-variant/30 dark:border-gray-600 p-lg flex flex-col gap-md transition-colors">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-md">
+<div class="w-[32px] h-[32px] rounded-full bg-surface-container-high dark:bg-gray-700 flex items-center justify-center text-on-surface-variant dark:text-gray-300">
+<span class="material-symbols-outlined text-[18px]" data-icon="explore_off">explore_off</span>
+</div>
+<span class="bg-surface-variant dark:bg-gray-700 text-on-surface-variant dark:text-gray-300 border border-outline-variant dark:border-gray-600 text-[10px] font-label-md uppercase tracking-wider px-sm py-xs rounded-full">Out of Scope</span>
+</div>
+</div>
+<div class="text-body-md font-body-md text-primary dark:text-gray-200">
+                I can currently answer questions specifically about these 6 schemes:
+                <ul class="list-disc pl-lg mt-sm space-y-xs text-on-surface-variant dark:text-gray-400">
+<li>HDFC Flexi Cap Fund</li>
+<li>HDFC Top 100 Fund</li>
+<li>HDFC Mid-Cap Opportunities Fund</li>
+<li>HDFC Small Cap Fund</li>
+<li>HDFC Balanced Advantage Fund</li>
+<li>HDFC Liquid Fund</li>
+</ul>
+</div>
+</div>
+<!-- 4. No-source -->
+<div class="bg-surface-container-lowest dark:bg-gray-800/80 backdrop-blur-sm bubble-shadow rounded-xl border-l-[4px] border-l-outline dark:border-l-gray-500 border border-outline-variant/30 dark:border-gray-600 p-lg flex flex-col gap-md opacity-80 transition-colors">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-md">
+<div class="w-[32px] h-[32px] rounded-full bg-surface-container-high dark:bg-gray-700 flex items-center justify-center text-on-surface-variant dark:text-gray-300">
+<span class="material-symbols-outlined text-[18px]" data-icon="search_off">search_off</span>
+</div>
+<span class="bg-surface-container dark:bg-gray-700 text-on-surface-variant dark:text-gray-300 border border-outline-variant/50 dark:border-gray-600 text-[10px] font-label-md uppercase tracking-wider px-sm py-xs rounded-full">No Source</span>
+</div>
+</div>
+<div class="text-body-md font-body-md text-on-surface-variant dark:text-gray-400 italic">
+                I don't have the factual information required to answer this question from the official scheme documents.
+            </div>
+</div>
+<!-- 5. Privacy rejection -->
+<div class="bg-surface-container-lowest dark:bg-gray-800/80 backdrop-blur-sm bubble-shadow rounded-xl border-l-[4px] border-l-[#d81b60] dark:border-l-pink-600 border border-outline-variant/30 dark:border-gray-600 p-lg flex flex-col gap-md transition-colors">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-md">
+<div class="w-[32px] h-[32px] rounded-full bg-surface-container-high dark:bg-gray-700 flex items-center justify-center text-[#d81b60] dark:text-pink-400">
+<span class="material-symbols-outlined text-[18px]" data-icon="security">security</span>
+</div>
+<span class="bg-[#fce4ec] dark:bg-pink-900/40 text-[#d81b60] dark:text-pink-300 text-[10px] font-label-md uppercase tracking-wider px-sm py-xs rounded-full">Privacy</span>
+</div>
+</div>
+<div class="text-body-md font-body-md text-primary dark:text-gray-200">
+                For your security, personal information (such as account numbers or PAN) is blocked from this query. Please do not share sensitive personal data in this chat.
+            </div>
+</div>
+<!-- 6. Service issue -->
+<div class="bg-error-container dark:bg-red-900/40 backdrop-blur-sm bubble-shadow rounded-xl border border-error/20 dark:border-red-800/50 p-lg flex flex-col gap-md transition-colors">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-md">
+<div class="w-[32px] h-[32px] rounded-full bg-error dark:bg-red-800 flex items-center justify-center text-on-error dark:text-red-100">
+<span class="material-symbols-outlined text-[18px]" data-icon="error">error</span>
+</div>
+<span class="bg-error dark:bg-red-800 text-on-error dark:text-red-100 text-[10px] font-label-md uppercase tracking-wider px-sm py-xs rounded-full">Service Issue</span>
+</div>
+</div>
+<div class="text-body-md font-body-md text-on-error-container dark:text-red-200">
+                The document retrieval service is temporarily unavailable. Please try your query again in a few moments.
+            </div>
+<div class="pt-sm flex items-center gap-sm">
+<button class="bg-error dark:bg-red-700 text-on-error dark:text-white px-md py-sm rounded border border-error dark:border-red-600 hover:bg-error/90 dark:hover:bg-red-600 text-label-md font-label-md transition-colors">
+                    Retry Request
+                </button>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="fixed bottom-0 left-[280px] right-0 z-50 flex flex-col items-center py-md space-y-base bg-surface-container-lowest dark:bg-gray-900/90 backdrop-blur-md border-t border-outline-variant dark:border-gray-700 transition-colors">
+<div class="flex gap-lg text-label-sm font-label-sm">
+<a class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-gray-100 transition-colors" href="#">Expense Ratio</a>
+<a class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-gray-100 transition-colors" href="#">Lock-in</a>
+<a class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-gray-100 transition-colors" href="#">NAV</a>
+<a class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-gray-100 transition-colors" href="#">Exit Load</a>
+</div>
+<div class="text-label-sm font-label-sm text-on-surface-variant dark:text-gray-500">
+            Facts-only. No investment advice.
+        </div>
+</footer>
+</div>
+<script>
+    // WebGL Shader Setup
+    const canvas = document.getElementById('glcanvas');
+    const renderer = new THREE.WebGLRenderer({canvas, alpha: true});
+    const scene = new THREE.Scene();
+    const camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
+
+    const vertexShader = `
+        varying vec2 v_texCoord;
+        void main() {
+            v_texCoord = uv;
+            gl_Position = vec4(position, 1.0);
+        }
+    `;
+
+    const fragmentShader = `
+        precision highp float;
+
+        uniform float u_time;
+        uniform vec2 u_resolution;
+
+        varying vec2 v_texCoord;
+
+        float hash(vec2 p) {
+            p = fract(p * vec2(123.34, 456.21));
+            p += dot(p, p + 45.32);
+            return fract(p.x * p.y);
+        }
+
+        void main() {
+            vec2 uv = v_texCoord;
+            vec2 aspect_uv = (uv - 0.5) * vec2(u_resolution.x / u_resolution.y, 1.0) + 0.5;
+            
+            // Background deep space gradient
+            vec3 color = vec3(0.02, 0.04, 0.1) * (1.0 - length(uv - 0.5));
+            
+            // Layered stars
+            for(float i = 0.0; i < 3.0; i++) {
+                float size = 100.0 + i * 50.0;
+                vec2 grid_uv = fract(aspect_uv * size) - 0.5;
+                vec2 id = floor(aspect_uv * size);
+                
+                float h = hash(id);
+                
+                if (h > 0.95) {
+                    float dist = length(grid_uv);
+                    // Twinkle effect
+                    float twinkle = sin(u_time * (h * 5.0) + h * 10.0) * 0.5 + 0.5;
+                    float star = 0.002 / dist * twinkle;
+                    
+                    // Color variations (blueish, yellowish, white)
+                    vec3 starColor = vec3(0.8, 0.9, 1.0);
+                    if(h > 0.98) starColor = vec3(1.0, 0.9, 0.7);
+                    
+                    color += star * starColor;
+                }
+            }
+            
+            // Subtle nebula glow
+            float nebula = sin(uv.x * 2.0 + u_time * 0.1) * cos(uv.y * 3.0 - u_time * 0.05);
+            color += vec3(0.05, 0.02, 0.08) * max(0.0, nebula);
+
+            gl_FragColor = vec4(color, 1.0);
+        }
+    `;
+
+    const uniforms = {
+        u_time: { value: 0.0 },
+        u_resolution: { value: new THREE.Vector2() }
+    };
+
+    const material = new THREE.ShaderMaterial({
+        vertexShader,
+        fragmentShader,
+        uniforms
+    });
+
+    const geometry = new THREE.PlaneGeometry(2, 2);
+    const mesh = new THREE.Mesh(geometry, material);
+    scene.add(mesh);
+
+    function resize() {
+        const width = window.innerWidth;
+        const height = window.innerHeight;
+        renderer.setSize(width, height);
+        uniforms.u_resolution.value.set(width, height);
+    }
+    window.addEventListener('resize', resize);
+    resize();
+
+    let isDarkMode = document.documentElement.classList.contains('dark');
+    
+    function render(time) {
+        if(isDarkMode) {
+            uniforms.u_time.value = time * 0.001;
+            renderer.render(scene, camera);
+        } else {
+            renderer.clear();
+        }
+        requestAnimationFrame(render);
+    }
+    requestAnimationFrame(render);
+
+    // Dark Mode Toggle Logic
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    darkModeToggle.addEventListener('click', () => {
+        document.documentElement.classList.toggle('dark');
+        isDarkMode = document.documentElement.classList.contains('dark');
+    });
+</script>
+</body></html>

@@ -1,0 +1,3 @@
+# Keeps the data/ directory in version control.
+# sources.json and schemes.json are added in Phase 1.
+# chroma/ and raw_cache/ are generated and git-ignored.

@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Welcome - HDFC Mutual Fund FAQ Assistant</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "surface-container": "#efedf1",
+                "on-tertiary-fixed": "#311300",
+                "error-container": "#ffdad6",
+                "surface-variant": "#e4e2e5",
+                "on-secondary-fixed-variant": "#00504d",
+                "tertiary-container": "#391700",
+                "on-secondary": "#ffffff",
+                "tertiary": "#150500",
+                "on-error-container": "#93000a",
+                "on-surface-variant": "#44464e",
+                "secondary": "#006a66",
+                "inverse-on-surface": "#f2f0f4",
+                "surface-container-high": "#e9e7eb",
+                "surface-container-low": "#f5f3f7",
+                "surface-tint": "#4c5e86",
+                "error": "#ba1a1a",
+                "surface-dim": "#dbd9dd",
+                "surface-bright": "#fbf8fc",
+                "tertiary-fixed-dim": "#f8b992",
+                "on-primary-fixed-variant": "#34466d",
+                "on-primary-container": "#7687b2",
+                "on-secondary-container": "#00716d",
+                "tertiary-fixed": "#ffdbc7",
+                "primary": "#00081e",
+                "on-tertiary": "#ffffff",
+                "surface": "#fbf8fc",
+                "primary-container": "#0a1f44",
+                "on-error": "#ffffff",
+                "secondary-fixed": "#7df6ef",
+                "on-primary-fixed": "#041a3f",
+                "secondary-container": "#7df6ef",
+                "on-tertiary-container": "#b37c59",
+                "surface-container-highest": "#e4e2e5",
+                "on-primary": "#ffffff",
+                "inverse-surface": "#303033",
+                "on-background": "#1b1b1e",
+                "outline": "#75777f",
+                "primary-fixed": "#d9e2ff",
+                "on-surface": "#1b1b1e",
+                "inverse-primary": "#b4c6f4",
+                "outline-variant": "#c5c6cf",
+                "on-tertiary-fixed-variant": "#673c1e",
+                "on-secondary-fixed": "#00201f",
+                "primary-fixed-dim": "#b4c6f4",
+                "surface-container-lowest": "#ffffff",
+                "background": "#fbf8fc",
+                "secondary-fixed-dim": "#5ed9d3"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "lg": "24px",
+                "xxl": "48px",
+                "chat-max-width": "800px",
+                "xl": "32px",
+                "sm": "8px",
+                "md": "16px",
+                "container-max": "1200px",
+                "base": "4px",
+                "xs": "4px"
+        },
+        "fontFamily": {
+                "label-sm": [
+                        "Inter"
+                ],
+                "display-lg": [
+                        "Inter"
+                ],
+                "body-lg": [
+                        "Inter"
+                ],
+                "headline-sm": [
+                        "Inter"
+                ],
+                "body-md": [
+                        "Inter"
+                ],
+                "headline-md-mobile": [
+                        "Inter"
+                ],
+                "headline-md": [
+                        "Inter"
+                ],
+                "label-md": [
+                        "Inter"
+                ]
+        },
+        "fontSize": {
+                "label-sm": [
+                        "12px",
+                        {
+                                "lineHeight": "1.2",
+                                "fontWeight": "500"
+                        }
+                ],
+                "display-lg": [
+                        "32px",
+                        {
+                                "lineHeight": "1.2",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-sm": [
+                        "20px",
+                        {
+                                "lineHeight": "1.4",
+                                "fontWeight": "600"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "1.5",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-md-mobile": [
+                        "20px",
+                        {
+                                "lineHeight": "1.3",
+                                "fontWeight": "600"
+                        }
+                ],
+                "headline-md": [
+                        "24px",
+                        {
+                                "lineHeight": "1.3",
+                                "letterSpacing": "-0.01em",
+                                "fontWeight": "600"
+                        }
+                ],
+                "label-md": [
+                        "14px",
+                        {
+                                "lineHeight": "1.2",
+                                "letterSpacing": "0.01em",
+                                "fontWeight": "600"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+<style>
+        body {
+            background-color: #f5f7fb;
+        }
+        .dark body {
+            background-color: transparent;
+        }
+        .soft-shadow {
+            box-shadow: 0px 4px 20px rgba(10, 31, 68, 0.05);
+        }
+        .dark .soft-shadow {
+            box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        .interactive-shadow:hover {
+            box-shadow: 0px 8px 30px rgba(10, 31, 68, 0.08);
+            transform: translateY(-2px);
+            transition: all 0.2s ease-in-out;
+        }
+        .dark .interactive-shadow:hover {
+            box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.4);
+        }
+        
+        /* Glassmorphism utilities */
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .dark .glass-panel {
+            background: rgba(10, 31, 68, 0.6);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        #shader-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+            display: none;
+        }
+        
+        .dark #shader-canvas {
+            display: block;
+        }
+    </style>
+<script>
+    function toggleDarkMode() {
+        document.documentElement.classList.toggle('dark');
+    }
+</script>
+</head>
+<body class="font-body-md text-on-surface dark:text-gray-200 flex min-h-screen">
+<!-- WebGL Background (only visible in dark mode) -->
+<canvas id="shader-canvas"></canvas>
+<!-- Sidebar -->
+<aside class="hidden lg:flex flex-col w-[280px] h-screen fixed left-0 top-0 glass-panel border-r border-outline-variant/30 dark:border-white/10 z-40">
+<div class="p-lg border-b border-outline-variant/30 dark:border-white/10 flex justify-between items-center h-[72px]">
+<h2 class="text-headline-sm font-bold text-primary dark:text-white">History</h2>
+<!-- Dark Mode Toggle -->
+<button class="p-sm rounded-full bg-surface-container dark:bg-white/10 hover:bg-surface-variant dark:hover:bg-white/20 transition-colors text-primary dark:text-white" onclick="toggleDarkMode()" title="Toggle Theme">
+<span class="material-symbols-outlined dark:hidden">dark_mode</span>
+<span class="material-symbols-outlined hidden dark:block">light_mode</span>
+</button>
+</div>
+<div class="flex-grow overflow-y-auto p-md space-y-md">
+<div class="text-label-sm text-on-surface-variant dark:text-gray-400 uppercase tracking-wider mb-sm">Today</div>
+<button class="w-full text-left p-sm rounded-lg hover:bg-surface-container dark:hover:bg-white/10 transition-colors truncate text-body-md dark:text-gray-300">
+            NAV of HDFC Top 100...
+        </button>
+<button class="w-full text-left p-sm rounded-lg hover:bg-surface-container dark:hover:bg-white/10 transition-colors truncate text-body-md dark:text-gray-300">
+            Expense ratio details
+        </button>
+<div class="text-label-sm text-on-surface-variant dark:text-gray-400 uppercase tracking-wider mt-lg mb-sm">Yesterday</div>
+<button class="w-full text-left p-sm rounded-lg hover:bg-surface-container dark:hover:bg-white/10 transition-colors truncate text-body-md dark:text-gray-300">
+            Exit load for Flexi Cap
+        </button>
+</div>
+<div class="p-md border-t border-outline-variant/30 dark:border-white/10">
+<button class="w-full flex items-center justify-center gap-sm bg-surface-container dark:bg-white/10 hover:bg-surface-variant dark:hover:bg-white/20 text-primary dark:text-white py-sm rounded-lg transition-colors font-bold text-label-md">
+<span class="material-symbols-outlined text-[20px]">add</span>
+            New Chat
+        </button>
+</div>
+</aside>
+<!-- Main Wrapper to push content next to sidebar -->
+<div class="flex-grow lg:ml-[280px] flex flex-col min-h-screen relative">
+<!-- TopAppBar from JSON -->
+<header class="fixed top-0 w-full lg:w-[calc(100%-280px)] z-50 flex justify-between items-center px-lg glass-panel shadow-sm full-width h-[72px]">
+<div class="flex items-center gap-md">
+<img alt="HDFC Mutual Fund Logo" class="w-10 h-10 rounded-DEFAULT" src="https://lh3.googleusercontent.com/aida/AP1WRLv5ypkZC4h5_tvnu3OmR9QXUfx67rN6qMaK4NcmSGYVYGrm0So3tkT_AnqAdfZWtaAibgFtzn3sQ24gw6NxEd-wVKCFRVcdDJyGnlIDfnSaTigLaW4dwHRe8qIPodidWCfq2iduL_Ooq_ZeeH05c_xqTWEWkQ_A4WJxbebf1T2JVTYvhTp1rUkWm15dTxdd05G0qS460oL8j4-BLwXOmco-kAVee-wexeI2VH9T1x6UQDSjd-H_i-3TrYU"/>
+<div>
+<h1 class="text-headline-sm font-headline-sm text-primary dark:text-white font-bold">HDFC Mutual Fund — FAQ Assistant</h1>
+<p class="text-label-sm font-label-sm text-on-surface-variant dark:text-gray-300 opacity-80 hidden md:block">Answers only from official sources · updated May 2024</p>
+</div>
+</div>
+<div class="flex items-center gap-md">
+<div class="hidden md:flex items-center gap-sm">
+<span class="bg-secondary-container/20 dark:bg-secondary/30 text-secondary dark:text-secondary-fixed-dim px-sm py-xs rounded-full text-label-sm font-label-sm font-bold border border-secondary/30">Facts-only</span>
+</div>
+<!-- Account Profile -->
+<button class="flex items-center gap-sm hover:opacity-80 transition-opacity">
+<div class="w-8 h-8 rounded-full bg-gradient-to-tr from-primary to-secondary text-white flex items-center justify-center font-bold text-label-md">
+            JS
+        </div>
+</button>
+</div>
+</header>
+<!-- Main Content Area -->
+<main class="flex-grow flex justify-center items-start pt-[120px] pb-[150px] px-md md:px-lg overflow-y-auto">
+<!-- Welcome Card -->
+<div class="w-full max-w-chat-max-width glass-panel rounded-xl p-lg md:p-xl soft-shadow flex flex-col gap-lg">
+<div class="text-center flex flex-col gap-sm items-center">
+<span class="material-symbols-outlined text-display-lg text-secondary dark:text-secondary-fixed-dim" style="font-variation-settings: 'FILL' 1;">forum</span>
+<h2 class="text-headline-md md:text-display-lg font-headline-md md:font-display-lg text-primary dark:text-white">Ask about HDFC Mutual Fund schemes</h2>
+<p class="text-body-md md:text-body-lg font-body-md md:font-body-lg text-on-surface-variant dark:text-gray-300 max-w-[600px]">
+                    I am an assistant designed to provide verified facts. I can help you find information such as expense ratio, lock-in periods, NAV, exit load, and taxation rules with direct links to official sources. I do not provide investment advice.
+                </p>
+</div>
+<!-- Covered Schemes Section -->
+<div class="flex flex-col gap-sm">
+<h3 class="text-label-md font-label-md text-on-surface-variant dark:text-gray-400 uppercase tracking-wider">Covered schemes</h3>
+<div class="flex flex-wrap gap-sm">
+<span class="bg-surface-container dark:bg-white/10 text-on-surface dark:text-gray-200 px-md py-sm rounded-full text-label-md font-label-md border border-outline-variant/50 dark:border-white/10">HDFC Top 100</span>
+<span class="bg-surface-container dark:bg-white/10 text-on-surface dark:text-gray-200 px-md py-sm rounded-full text-label-md font-label-md border border-outline-variant/50 dark:border-white/10">HDFC Mid-Cap Opportunities</span>
+<span class="bg-surface-container dark:bg-white/10 text-on-surface dark:text-gray-200 px-md py-sm rounded-full text-label-md font-label-md border border-outline-variant/50 dark:border-white/10">HDFC Flexi Cap</span>
+<span class="bg-surface-container dark:bg-white/10 text-on-surface dark:text-gray-200 px-md py-sm rounded-full text-label-md font-label-md border border-outline-variant/50 dark:border-white/10">HDFC Small Cap</span>
+<span class="bg-surface-container dark:bg-white/10 text-on-surface dark:text-gray-200 px-md py-sm rounded-full text-label-md font-label-md border border-outline-variant/50 dark:border-white/10">HDFC Liquid Fund</span>
+<span class="bg-surface-container dark:bg-white/10 text-on-surface dark:text-gray-200 px-md py-sm rounded-full text-label-md font-label-md border border-outline-variant/50 dark:border-white/10">HDFC Balanced Advantage</span>
+</div>
+</div>
+<!-- Try an Example Section -->
+<div class="flex flex-col gap-sm mt-md">
+<h3 class="text-label-md font-label-md text-on-surface-variant dark:text-gray-400 uppercase tracking-wider">Try an example</h3>
+<div class="flex flex-col gap-sm">
+<button class="interactive-shadow w-full text-left bg-surface-container-lowest dark:bg-white/5 border border-outline-variant/50 dark:border-white/10 text-on-surface dark:text-gray-200 p-md rounded-lg flex items-center justify-between group">
+<span class="text-body-md font-body-md group-hover:text-primary dark:group-hover:text-white transition-colors">What is the NAV of HDFC Top 100 Fund?</span>
+<span class="material-symbols-outlined text-outline dark:text-gray-400 group-hover:text-secondary dark:group-hover:text-secondary-fixed-dim transition-colors">arrow_forward</span>
+</button>
+<button class="interactive-shadow w-full text-left bg-surface-container-lowest dark:bg-white/5 border border-outline-variant/50 dark:border-white/10 text-on-surface dark:text-gray-200 p-md rounded-lg flex items-center justify-between group">
+<span class="text-body-md font-body-md group-hover:text-primary dark:group-hover:text-white transition-colors">What is the exit load for HDFC Flexi Cap?</span>
+<span class="material-symbols-outlined text-outline dark:text-gray-400 group-hover:text-secondary dark:group-hover:text-secondary-fixed-dim transition-colors">arrow_forward</span>
+</button>
+<button class="interactive-shadow w-full text-left bg-surface-container-lowest dark:bg-white/5 border border-outline-variant/50 dark:border-white/10 text-on-surface dark:text-gray-200 p-md rounded-lg flex items-center justify-between group">
+<span class="text-body-md font-body-md group-hover:text-primary dark:group-hover:text-white transition-colors">Show me the expense ratio for HDFC Small Cap.</span>
+<span class="material-symbols-outlined text-outline dark:text-gray-400 group-hover:text-secondary dark:group-hover:text-secondary-fixed-dim transition-colors">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer / Composer Bar from JSON -->
+<footer class="fixed bottom-0 w-full lg:w-[calc(100%-280px)] z-50 flex flex-col items-center py-md space-y-base glass-panel border-t border-outline-variant/30 dark:border-white/10 px-md md:px-lg pb-lg md:pb-xl">
+<div class="w-full max-w-chat-max-width flex gap-sm items-center bg-surface-container-lowest dark:bg-white/10 rounded-full border border-outline-variant/50 dark:border-white/20 p-xs pl-md interactive-shadow focus-within:border-primary/50 dark:focus-within:border-white/50 focus-within:ring-1 focus-within:ring-primary/50 dark:focus-within:ring-white/50 transition-all">
+<input class="flex-grow bg-transparent border-none focus:ring-0 text-body-md font-body-md text-on-surface dark:text-white placeholder:text-outline dark:placeholder:text-gray-400 p-0" placeholder="Ask a question..." type="text"/>
+<button class="bg-gradient-to-r from-primary to-secondary text-on-primary px-lg py-sm rounded-full text-label-md font-label-md font-bold flex items-center gap-xs hover:opacity-90 transition-opacity">
+                Ask
+                <span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</div>
+<div class="flex gap-md pt-xs">
+<p class="text-label-sm font-label-sm text-on-surface-variant dark:text-gray-400 text-center opacity-80">Facts-only. No investment advice.</p>
+</div>
+</footer>
+</div>
+<script>
+    // WebGL Background setup
+    const canvas = document.getElementById('shader-canvas');
+    const gl = canvas.getContext('webgl');
+
+    if (gl) {
+        // Vertex shader
+        const vsSource = `
+            attribute vec4 aVertexPosition;
+            varying vec2 v_texCoord;
+            void main() {
+                gl_Position = aVertexPosition;
+                v_texCoord = aVertexPosition.xy * 0.5 + 0.5;
+            }
+        `;
+
+        // Fragment shader (from DataStore)
+        const fsSource = `
+            precision highp float;
+
+            uniform float u_time;
+            uniform vec2 u_resolution;
+            uniform vec2 u_mouse;
+
+            varying vec2 v_texCoord;
+
+            float hash(vec2 p) {
+                p = fract(p * vec2(123.34, 456.21));
+                p += dot(p, p + 45.32);
+                return fract(p.x * p.y);
+            }
+
+            void main() {
+                vec2 uv = v_texCoord;
+                vec2 aspect_uv = (uv - 0.5) * vec2(u_resolution.x / u_resolution.y, 1.0) + 0.5;
+                
+                // Background deep space gradient
+                vec3 color = vec3(0.02, 0.04, 0.1) * (1.0 - length(uv - 0.5));
+                
+                // Layered stars
+                for(float i = 0.0; i < 3.0; i++) {
+                    float size = 100.0 + i * 50.0;
+                    vec2 grid_uv = fract(aspect_uv * size) - 0.5;
+                    vec2 id = floor(aspect_uv * size);
+                    
+                    float h = hash(id);
+                    
+                    if (h > 0.95) {
+                        float dist = length(grid_uv);
+                        // Twinkle effect
+                        float twinkle = sin(u_time * (h * 5.0) + h * 10.0) * 0.5 + 0.5;
+                        float star = 0.002 / dist * twinkle;
+                        
+                        // Color variations (blueish, yellowish, white)
+                        vec3 starColor = vec3(0.8, 0.9, 1.0);
+                        if(h > 0.98) starColor = vec3(1.0, 0.9, 0.7);
+                        
+                        color += star * starColor;
+                    }
+                }
+                
+                // Subtle nebula glow
+                float nebula = sin(uv.x * 2.0 + u_time * 0.1) * cos(uv.y * 3.0 - u_time * 0.05);
+                color += vec3(0.05, 0.02, 0.08) * max(0.0, nebula);
+
+                gl_FragColor = vec4(color, 1.0);
+            }
+        `;
+
+        // Shader setup
+        const loadShader = (gl, type, source) => {
+            const shader = gl.createShader(type);
+            gl.shaderSource(shader, source);
+            gl.compileShader(shader);
+            return shader;
+        };
+
+        const vertexShader = loadShader(gl, gl.VERTEX_SHADER, vsSource);
+        const fragmentShader = loadShader(gl, gl.FRAGMENT_SHADER, fsSource);
+
+        const shaderProgram = gl.createProgram();
+        gl.attachShader(shaderProgram, vertexShader);
+        gl.attachShader(shaderProgram, fragmentShader);
+        gl.linkProgram(shaderProgram);
+        gl.useProgram(shaderProgram);
+
+        // Buffers
+        const positions = [
+            -1.0,  1.0,
+             1.0,  1.0,
+            -1.0, -1.0,
+             1.0, -1.0,
+        ];
+
+        const positionBuffer = gl.createBuffer();
+        gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
+        gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(positions), gl.STATIC_DRAW);
+
+        const vertexPosition = gl.getAttribLocation(shaderProgram, 'aVertexPosition');
+        gl.enableVertexAttribArray(vertexPosition);
+        gl.vertexAttribPointer(vertexPosition, 2, gl.FLOAT, false, 0, 0);
+
+        // Uniforms
+        const uTimeLocation = gl.getUniformLocation(shaderProgram, 'u_time');
+        const uResolutionLocation = gl.getUniformLocation(shaderProgram, 'u_resolution');
+
+        const resize = () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            gl.viewport(0, 0, canvas.width, canvas.height);
+            gl.uniform2f(uResolutionLocation, canvas.width, canvas.height);
+        };
+        window.addEventListener('resize', resize);
+        resize();
+
+        // Render loop
+        const render = (time) => {
+            if (document.documentElement.classList.contains('dark')) {
+                gl.uniform1f(uTimeLocation, time * 0.001);
+                gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+            }
+            requestAnimationFrame(render);
+        };
+        requestAnimationFrame(render);
+    }
+</script>
+</body></html>

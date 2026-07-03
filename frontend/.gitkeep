@@ -1,0 +1,13 @@
+# Frontend — implemented in Phase 9 (NOT YET BUILT).
+#
+# REQUIREMENT (carry-forward): build a VERY HIGH-QUALITY frontend.
+#   - Framework: React (Vite) — chosen for the polished "full product" deliverable (decisions.md D-36).
+#   - Must include (FR 6.5): welcome message, 3 clickable example questions,
+#     always-visible disclaimer "Facts-only. No investment advice.",
+#     input field, response area (answer + clickable citation + "Last updated from sources: <date>" footer).
+#   - Wire to: POST /api/query, GET /api/examples, GET /api/meta.
+#   - Quality bar: clean design system, responsive, accessible (semantic HTML,
+#     ARIA labels, keyboard nav), loading + error states, response-type styling
+#     (factual / refusal / scope / no-source / PII).
+#
+# Do not implement until Phase 9 (prerequisite: Phase 8 API hardening).

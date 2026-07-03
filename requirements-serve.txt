@@ -14,7 +14,7 @@ groq==0.13.1
 
 # Compiler-free retrieval backend (numpy store + fastembed ONNX embeddings)
 numpy>=1.26,<3
-fastembed>=0.3,<0.5
+fastembed>=0.3
 
 # Optional: only needed if SCHEDULER_ENABLED=1 (in-app re-ingestion)
 # APScheduler==3.11.0
